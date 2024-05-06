@@ -14,17 +14,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Gerenciador de Tarefas',
+      title: 'Gerenciador Tarefas',
       theme: ThemeData(
+        primarySwatch: Colors.red,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
       home: ListaTarefaPage(),
       routes: {
-        FiltroPage
-            .ROUTE_NAME: (BuildContext context) => FiltroPage(),
-      }
+        FiltroPage.ROUTE_NAME: (BuildContext context) => FiltroPage(),
+      },
     );
   }
 }
